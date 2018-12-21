@@ -1,0 +1,17 @@
+<div class="nav typeset">
+
+  {% if page.next %}
+    <a href="{{page.next.url | prepend:site.baseurl}}" class="prev">Previous</a>
+  {% else %}
+    <span class="prev dim">Previous</span>
+  {% endif %}
+
+  <a href="/" class="home">Home</a>
+
+  {% if page.previous %}
+    <a href="{{page.previous.url | prepend:site.baseurl}}" class="next">Next</a>
+  {% else %}
+    <span class="next dim">Next</span>
+  {% endif %}
+
+</div>

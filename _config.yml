@@ -1,0 +1,10 @@
+markdown: rdiscount
+permalink: /photos/:year.:month.:day/
+paginate: 8
+plugins:
+  - jekyll-paginate
+exclude:
+  - vendor/*
+  - Gemfile*
+  - Rakefile
+  - README.md
